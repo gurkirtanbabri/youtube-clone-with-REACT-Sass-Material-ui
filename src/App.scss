@@ -1,0 +1,147 @@
+html{
+  font-family: 'Roboto', sans-serif;
+}
+$headerDivSize:10vw;
+$primarycolor:#ffffff;
+$seccolor:#606060;
+$activecolor:#333333;
+.Header svg{
+  color:gray;
+}
+.Header{
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding: 10px;
+  padding-right: 10px;
+  background-color: $primarycolor;
+  .logo{
+    height: 1rem;
+    object-fit: contain;
+  
+  }
+  .leftDiv{
+    border:2px solid $primarycolor;
+    width: $headerDivSize;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: contain;
+  }
+  .rightDiv{
+    width: $headerDivSize;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .canterDiv{
+    
+    width: 40%;
+    display: flex;
+    
+    flex-shrink: 4;
+    align-items: center;
+    border: 2px solid #F0F0F0;
+    padding: 0%;
+    margin: 0%;
+  border: 2px solid #F0F0F0;
+  input{
+    height: 1rem;
+    outline-color:  #1a75ff;
+    outline-width:thin;
+    border: none;
+    height: 100%;
+    width: 85% !important;
+    margin: 0%;
+    
+    
+  }
+  input::placeholder{
+    font-size: 1.2rem;
+  }
+  input:focus input{
+    border:1px  #1a75ff;
+
+  }
+  svg{
+    border-left: 0.5px solid #f8f8f8;
+    
+      width: 14%;
+      margin: 0%;
+      height: 100%;
+      color:gray;
+  background-color: #f8f8f8;
+    }
+
+  }
+}
+
+.videoArea{
+  display: flex;
+  .sidebar{
+    flex:0.15;
+    background-color: $primarycolor;
+    min-height: 100vh;
+    padding: 1rem;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .videos{
+    flex:0.875;
+
+    
+     background-color: #f8f8f8;
+  }
+  .videos_type{
+    border-bottom: 2px solid #E4E5E6;
+  }
+  .sideListdiv{
+    
+    svg{
+      color: $seccolor;
+    }
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1vh 0px;
+    display: flex;
+    align-items:center ;
+    padding: 10px;
+    .title{
+      flex:0.8;
+      font-size: 1rem;
+      text-align: left;
+  font-weight: 500;
+  margin-left:2vw ;
+  color:$seccolor;
+    }
+  }
+}
+
+
+.active{
+      
+    svg{
+      color: red;
+      margin-left: 2px;
+    }box-sizing: border-box;
+ 
+    background-color: #F2F2F2;
+    margin: 1vh 0px;
+    display: flex;
+    align-items:center ;
+    padding: 10px;
+    
+    .title{
+      flex:0.8;
+      font-size: 1rem;
+      text-align: left;
+  font-weight: 500;
+  margin-left:2vw ;
+  color:black;
+    }
+
+}

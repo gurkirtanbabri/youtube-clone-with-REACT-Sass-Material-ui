@@ -1,34 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
 import firebase from "./firebase";
+import Header from './Header';
+import SideBar from "./Sidebar";
+import Main from "./Main";
+
 function App() {
 
 
   const todoRef = firebase.database().ref('Too');
-  const tdo = {
-    title:"working",
-    complete: false,
-  };
-
-  todoRef.push(tdo);
+ 
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+<div className = "videoArea">
+
+      <SideBar/>
+      <Main/>
+</div>
     </div>
   );
 }
