@@ -1,7 +1,21 @@
 import React from 'react';
+import VideoDiv from './videoDiv';
 const Main = () => {
     return (<div className="videos">
-        videos
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
+
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
+
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
+<VideoDiv/>
     </div> );
 }
  
